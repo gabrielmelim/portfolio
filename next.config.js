@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: '/gabrielmelimdev',
-    assetPrefix: '/gabrielmelimdev/',
-    distDir: 'out', // Adicione esta configuração
+    output: 'export',
+    distDir: 'dist',
+    images: {
+      unoptimized: true,
+    }
   };
   
   module.exports = nextConfig;
